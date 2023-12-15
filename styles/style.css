@@ -11,6 +11,13 @@
   --dark-black: #070709;
 }
 
+.titulo {
+  font-family: "Press Start 2P", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #eaeaea;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -84,9 +91,11 @@ main {
   padding: 16px 80px;
 }
 
-.titulo {
-  font-family: "Press Start 2P", sans-serif;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #eaeaea;
+/* Proyectos */
+#card-proyect {
+  position: relative;
+}
+
+#info-proyect {
+  position: absolute;
 }
