@@ -34,17 +34,14 @@ function mostraProyectos() {
 
   proyectos.forEach((proyecto) => {
     contenedorProyectos.innerHTML += `
-
-        <div class="col">
-            <div class="card h-100">
-                <a href=${proyecto.url}>
-                    <img src="${proyecto.imagen}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">${proyecto.nombre}</h5>
-                    <p class="card-text">${proyecto.descripcion}</p>
-                </div>
-            </div>  
+        <div class="card-proyecto">
+            <a href=${proyecto.url}>
+              <img src="${proyecto.imagen}" alt="...">
+              <div class="info-proyecto">
+                <h3 class="card-title">${proyecto.nombre}</h3>
+                <p class="card-text">${proyecto.descripcion}</p>
+              </div>
+            </a>
         </div>
     `;
   });
