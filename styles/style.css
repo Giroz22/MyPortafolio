@@ -1,61 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Press+Start+2P&family=Roboto:wght@300;400;500;700&display=swap");
-
-:root {
-  --primary-light: #8dd2db;
-  --primary: #44a9c3;
-  --primary-dark: #083f53;
-
-  --light: #c2e6e2;
-  --dark: #0a1128;
-  --dark-black: #070709;
-
-  --asparagus: #708e5b;
-  --cal-poly-green: #1d4f23;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
-  color: #eaeaea;
-  box-sizing: border-box;
-}
-
-body {
-  background: radial-gradient(
-    circle at bottom left,
-
-    #083f53 2%,
-    #0a1128 15%,
-    #070709 50%
-  );
-}
-
-header {
-}
-
 /* Info */
-.info {
-  height: 40%;
-  width: 40%;
-  color: #eaeaea;
+.mi-info {
+  flex-direction: column;
 }
 
-.info p {
-  font-size: large;
-  text-align: justify;
-  font-weight: 400;
-  justify-content: center;
-}
 /* Logo */
-.content-logo {
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-}
-
 .content-logo .circulo {
-  height: 70vh;
-  width: 70vh;
   border-radius: 50%;
   background: rgb(68, 169, 195);
   background: radial-gradient(
@@ -65,17 +14,20 @@ header {
     rgba(194, 230, 226, 1) 100%
   );
   overflow: hidden;
+  box-shadow: 0px 0px 10vh 5vh #083f53;
+  position: relative;
 
-  box-shadow: 0px 0px 50px 10px #083f53, 0px 0px 0px 8px #27572d;
+  height: 70vh;
+  width: 70vh;
+
+  position: relative;
 }
 
 .content-logo .circulo .avatar {
-  width: 90%;
-  height: 100%;
-  background-image: url(../media/ImagenFondo.png);
-  background-repeat: no-repeat;
-
-  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
 }
 
 main {
@@ -131,19 +83,3 @@ main {
 }
 
 /* Sobre mi */
-
-/* Clases generales */
-.contenedor {
-  height: 100vh;
-  width: 100%;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.titulo {
-  font-family: "Press Start 2P", sans-serif;
-  margin-bottom: 30px;
-  text-align: center;
-}
