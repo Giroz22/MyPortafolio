@@ -1,0 +1,18 @@
+---
+const listOpcs = [
+    {name: "About", href:"#"},
+    {name: "Projects", href:"#"}
+];
+---
+
+<nav class="w-full h-1/4">
+    <ul class="flex gap-2 justify-end px-8 py-4">
+        {listOpcs.map((opc, index)=>{                    
+                return (
+                    <a class="hover:text-primaryLight" href={opc.href}><li>{opc.name}</li></a>
+                    <li>{index != listOpcs.length-1 ? "/" : null}</li>
+                )                    
+            }                        
+        )}                
+    </ul>
+</nav>

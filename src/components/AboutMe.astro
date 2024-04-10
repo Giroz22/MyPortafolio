@@ -1,0 +1,26 @@
+---
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+const listOpcs = [
+    {iconClass: "bi bi-github", name:"Github",href:"#"},
+    {iconClass: "bi bi-linkedin", name:"Linkledin", href:"#"}
+];
+---
+
+<section class="p-20 w-full">
+    <h2 class="text-2xl text-primaryLight font-bold py-4">Hola!!!👋 Soy Alejandro Giraldo</h2>
+    <p class="max-w-lg text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eligendi? Beatae eaque voluptatem doloremque non et, error facilis nulla sit deserunt dignissimos? Ab perspiciatis dolorum id qui assumenda a suscipit.
+    </p>    
+    <ul class="flex gap-4 py-2">
+        {listOpcs.map((opc)=>{                    
+                return (
+                    <a class="hover:text-blue-500 text-lg" href={opc.href}>
+                        <i class= {`${opc.iconClass} hover:text-primaryLight text-2xl`}></i> {opc.name}
+                    </a>                        
+                )                    
+            }                        
+        )}                
+    </ul>        
+
+</section>
