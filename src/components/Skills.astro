@@ -1,0 +1,16 @@
+---
+const listSkills:string[] = ["html", "css", "js", "react", "astro", "python", "java", "mysql"];
+
+---
+<div class="w-full h-[100px] bg-secontaryDark/30 flex justify-evenly items-center mb-20 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+    <h2 class="text-2xl text-primaryLight font-bold py-4">Habilidades</h2>
+
+    {
+        listSkills.map((skill) => 
+            <div class="">
+                <img class="w-12 h-12 hover:scale-125 duration-300" src={`../../public/icons/${skill}.svg`} alt={`Icono de ${skill}`}>                
+            </div>
+        )        
+    }
+
+</div>
