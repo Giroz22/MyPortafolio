@@ -1,5 +1,6 @@
 ---
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Avatar from './Avatar.jsx'
 
 const listOpcs = [
     {iconClass: "bi bi-github", name:"Github", href:"https://github.com/Giroz22"},
@@ -7,20 +8,26 @@ const listOpcs = [
 ];
 ---
 
-<section class="p-20 w-full">
-    <h2 class="text-2xl text-primaryLight font-bold py-4">Hola!!!👋 Soy Alejandro Giraldo</h2>
-    <p class="max-w-lg text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eligendi? Beatae eaque voluptatem doloremque non et, error facilis nulla sit deserunt dignissimos? Ab perspiciatis dolorum id qui assumenda a suscipit.
-    </p>    
-    <ul class="flex gap-4 py-2">
-        {listOpcs.map((opc)=>{                    
-                return (
-                    <a class="hover:text-blue-500 text-lg" href={opc.href}>
-                        <i class= {`${opc.iconClass} hover:text-primaryLight text-2xl`}></i> {opc.name}
-                    </a>                        
-                )                    
-            }                        
-        )}                
-    </ul>        
-
+<section class="p-20 w-full flex justify-evenly">
+    <div class="basis-1/2 flex flex-col justify-center">
+        <h2 class="text-2xl text-primaryLight font-bold py-4">
+            Hola!!! 👋
+            Soy Alejandro Giraldo Serna
+        </h2>
+        <p class="max-w-lg text-justify">
+            Soy un apasionado de la programación, la tecnología y los deportes subacuáticos. Estoy comprometido con mi desarrollo personal, social y profesional, siempre en la búsqueda de mejorar, innovar y aportar en cada proyecto en el que participo.
+        </p>    
+        <ul class="flex gap-4 py-2">
+            {listOpcs.map((opc)=>{                    
+                    return (
+                        <a class="hover:text-blue-500 text-lg" href={opc.href}>
+                            <i class= {`${opc.iconClass} hover:text-primaryLight text-2xl`}></i> {opc.name}
+                        </a>                        
+                    )                    
+                }                        
+            )}                
+        </ul> 
+    </div>
+           
+    <Avatar client:visible/>
 </section>
