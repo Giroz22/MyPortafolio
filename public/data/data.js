@@ -1,34 +1,29 @@
 export const listProjects = [
   {
-    title: "Restaurante1",
+    title: "SGM CONSULTORES",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium minus id suscipit enim corrupti? Rem quaerat, excepturi expedita sequi, eius modi veniam tempore unde perferendis architecto similique! Nisi, expedita amet?",
-    technologies: ["react", "js"],
-    urlImg:
-      "https://imgs.search.brave.com/qmSUMmwBNb5V2eAtA61laqdZFRMsQ6lTkPay8OxeqAw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZXVyb2lubm92YS5l/ZHUuZXMvaW1nL3N1/YmlkYXNFZGl0b3Iv/cHVibGlycmVwb3J0/YWplcyUyMCg3KS0x/NjI2MTY3MjQ5Lndl/YnA",
+      "Pagina web centrada en mostrar informacion de la empresa SGM la cual se encarga específicamente en asesorías jurídicas y contables, lo cual abarca tanto a personas jurídicas como a personas naturales, centrado en todas las ramas del derecho.",
+    technologies: ["astro", "react"],
+    urlGithub: "https://github.com/Giroz22/SGM-ASTRO",
+    urlPage: "https://sgm-astro.vercel.app/",
+    urlImg: "../imgs/SGM.png",
   },
   {
-    title: "Restaurante2",
+    title: "Arkanoid Game",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium minus id suscipit enim corrupti? Rem quaerat, excepturi expedita sequi, eius modi veniam tempore unde perferendis architecto similique! Nisi, expedita amet?",
-    technologies: ["react", "js"],
-    urlImg:
-      "https://imgs.search.brave.com/qmSUMmwBNb5V2eAtA61laqdZFRMsQ6lTkPay8OxeqAw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZXVyb2lubm92YS5l/ZHUuZXMvaW1nL3N1/YmlkYXNFZGl0b3Iv/cHVibGlycmVwb3J0/YWplcyUyMCg3KS0x/NjI2MTY3MjQ5Lndl/YnA",
+      "Arkanoid es un clásico juego de arcade donde controlas una paleta deslizante para rebotar una pelota y destruir bloques en la parte superior de la pantalla.",
+    technologies: ["html", "css", "js"],
+    urlGithub: "https://github.com/Giroz22/Arkanoid",
+    urlPage: "https://arkanoid-nine.vercel.app/",
+    urlImg: "../imgs/Arkanoid.png",
   },
   {
-    title: "Restaurante3",
+    title: "SplashPaws",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium minus id suscipit enim corrupti? Rem quaerat, excepturi expedita sequi, eius modi veniam tempore unde perferendis architecto similique! Nisi, expedita amet?",
-    technologies: ["react", "js"],
-    urlImg:
-      "https://imgs.search.brave.com/qmSUMmwBNb5V2eAtA61laqdZFRMsQ6lTkPay8OxeqAw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZXVyb2lubm92YS5l/ZHUuZXMvaW1nL3N1/YmlkYXNFZGl0b3Iv/cHVibGlycmVwb3J0/YWplcyUyMCg3KS0x/NjI2MTY3MjQ5Lndl/YnA",
-  },
-  {
-    title: "Restaurante4",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium minus id suscipit enim corrupti? Rem quaerat, excepturi expedita sequi, eius modi veniam tempore unde perferendis architecto similique! Nisi, expedita amet?",
-    technologies: ["react", "js"],
-    urlImg:
-      "https://imgs.search.brave.com/qmSUMmwBNb5V2eAtA61laqdZFRMsQ6lTkPay8OxeqAw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZXVyb2lubm92YS5l/ZHUuZXMvaW1nL3N1/YmlkYXNFZGl0b3Iv/cHVibGlycmVwb3J0/YWplcyUyMCg3KS0x/NjI2MTY3MjQ5Lndl/YnA",
+      "Catálogo virtual de productos y sistema de gestión de servicios para la tienda de mascotas SplashPaws.",
+    technologies: ["html", "css", "js"],
+    urlGithub: "https://github.com/Giroz22/SplashPaws",
+    urlPage: "https://splash-paws.vercel.app/src/pages/main/html/main.html",
+    urlImg: "../imgs/SplashPaws.png",
   },
 ];

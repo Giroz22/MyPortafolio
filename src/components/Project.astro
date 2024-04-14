@@ -1,21 +1,37 @@
 ---
-const {title, description, technologies, urlImg} = Astro.props;
+interface Props {
+	title: string;
+    description:string;
+    technologies:Array<string>;
+    urlGithub: string;
+    urlPage: string;
+    urlImg: string;
+}
+
+const {title, description, technologies, urlGithub, urlPage, urlImg} = Astro.props;
 ---
 
-<div class="w-full flex backdrop-blur-sm bg-secontaryDark/30">
-    <div class="basis-1/2 p-6 relative">
-        <h3 class="text-3xl pb-4">{title}</h3>
-        <p  class="w-full text-justify pb-2 ">
-            {description}
-        </p>
-        <div class="flex gap-2">
-            {
-                technologies.map( nameIcon => <img class="w-10" src={`../../public/icons/${nameIcon}.svg`} alt={`Icono de ${nameIcon}`}>)
-            }            
+<div class="w-full h-[350px] flex backdrop-blur-sm bg-secontaryDark/30">
+    <div class="basis-1/2 p-4 relative flex flex-col justify-between">
+        <div>
+            <h3 class="text-3xl pb-4 text-primaryLight">{title}</h3>
+            <p  class="w-full text-justify pb-4">
+                {description}
+            </p>
+            <div class="flex gap-2">
+                {
+                    technologies.map( nameIcon => <img class="w-10 h-10" src={`../../public/icons/${nameIcon}.svg`} alt={`Icono de ${nameIcon}`}>)
+                }            
+            </div>        
         </div>
-        
+        <div class="text-3xl flex justify-end gap-2">
+            <a href={urlGithub} class="hover:text-primaryLight"><i class="bi bi-github"></i></a>
+            <a href={urlPage} class="hover:text-primaryLight"><i class="bi bi-box-arrow-in-right text-4xl"></i></a>
+        </div>                
     </div>
     <div class="basis-1/2 overflow-hidden">
-        <img class="hover:scale-105 duration-300" src={urlImg} alt="project">
+        <a href={urlPage}>
+            <img class="hover:scale-105 duration-300 h-full object-cover" src={urlImg} alt="project">
+        </a>        
     </div>    
 </div>
