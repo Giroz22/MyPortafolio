@@ -1,5 +1,6 @@
 ---
 import "bootstrap-icons/font/bootstrap-icons.css";
+import ModalContact from './Contact.jsx'
 import Avatar from './Avatar.jsx'
 
 const listOpcs = [
@@ -8,7 +9,7 @@ const listOpcs = [
 ];
 ---
 
-<section class="px-20 py-14 w-full flex justify-around">
+<section id="id_aboutMe" class="px-4 md:px-20 md:py-14 w-full flex flex-col-reverse md:flex-row justify-around">
     <div class="basis-1/2 flex flex-col justify-center">
         <h2 class="text-2xl text-primaryLight font-bold py-4">
             Hola!!! 👋
@@ -27,7 +28,10 @@ const listOpcs = [
                 }                        
             )}                
         </ul> 
+
+        <ModalContact client:visible/>        
     </div>
            
     <Avatar client:visible/>
+
 </section>

@@ -11,22 +11,24 @@ interface Props {
 const {title, description, technologies, urlGithub, urlPage, urlImg} = Astro.props;
 ---
 
-<div class="w-full h-[350px] flex backdrop-blur-sm bg-secontaryDark/30">
+<div class="w-full md:h-[350px] flex flex-col-reverse md:flex-row  backdrop-blur-sm bg-secontaryDark/30">
     <div class="basis-1/2 p-4 relative flex flex-col justify-between">
         <div>
             <h3 class="text-3xl pb-4 text-primaryLight">{title}</h3>
             <p  class="w-full text-justify pb-4">
                 {description}
-            </p>
-            <div class="flex gap-2">
+            </p>                    
+        </div>
+        <div class="text-3xl flex justify-between gap-2">
+            <div class="flex gap-2 justify-center">
                 {
                     technologies.map( nameIcon => <img class="w-10 h-10" src={`../../public/icons/${nameIcon}.svg`} alt={`Icono de ${nameIcon}`}>)
-                }            
-            </div>        
-        </div>
-        <div class="text-3xl flex justify-end gap-2">
-            <a href={urlGithub} class="hover:text-primaryLight"><i class="bi bi-github"></i></a>
-            <a href={urlPage} class="hover:text-primaryLight"><i class="bi bi-box-arrow-in-right text-4xl"></i></a>
+                }       
+            </div>
+            <div class="justify-center">
+                <a href={urlGithub} class="hover:text-primaryLight"><i class="bi bi-github"></i></a>
+                <a href={urlPage} class="hover:text-primaryLight"><i class="bi bi-box-arrow-in-right text-4xl"></i></a>
+            </div>            
         </div>                
     </div>
     <div class="basis-1/2 overflow-hidden">
